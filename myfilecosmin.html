@@ -1,0 +1,43 @@
+  >DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8>
+	<title>Document</title>ITMD-361 Lab 3 Form Procesing Script</title>
+  </head>
+  <body>
+    <h1>Thank you for your ITMD-361 form submission</h1>
+	<form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="post">
+	  <fieldset>
+	    <legend>My info</legend>
+		<div><label>First Name: <input size="100" type="text" name="First_Name_Field"></label></div>
+		<div><label>Last Name: <input size="100" type="text" name="First_Name_Field"></label></div>
+		<div><label>Phone Number: <input size="100" type="text" name="Phone_Number_Field"></label></div>
+		<div><label>Email Address: <input size="100" type="text" name="Email_Address_Field"></label></div>
+		<div>Gender: </div>
+		<div>
+		  <label>Male <input type="radio" name="Gender_Field" value="Male"></label>
+		  <label>Female <input type="radio" name="Gender_Field" value="Female"></label>
+		</div>
+		<div> Age: </div>
+		<select name="Age_Field">
+		  <option>Under 18</Option>
+		  <option>Over 18</Option>
+		</select>
+	  </fieldset>
+	  <fieldset>
+	    <legend>My Availability</legend>
+		<h3> Days Available:</h3>
+		<div>
+		   <div><label>Monday <input type="checkbox" name="available_field[]" value="Monday"></label></div>
+		   <div><label>Tuesday <input type="checkbox" name="available_field[]" value="Tuesday"></label></div>
+		   <h3>Comments</h3>
+		   <textarea name="Comments_Field"></textarea>
+		</div>
+	  </fieldset>
+	  </fieldset>
+	  <input type="Hidden" name="Hidden_Field" value="Cosmin">
+	  <input type="Submit">
+	</form>
+	</body>
+	</html>
+  
